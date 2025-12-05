@@ -14,11 +14,11 @@ export const SOCIAL_LINKS = {
  * LOGO CONFIGURATION
  * ------------------
  * Replace the URLs below with your local image paths.
- * Example: honda: "images/honda-logo.webp"
+ * Example: honda: "./images/honda-logo.webp"
  */
 export const LOGOS = {
-  honda: "images/honda-logo.webp", 
-  iitb: "images/iitb_logo.png"
+  honda: "./images/honda-logo.webp", 
+  iitb: "./images/iitb_logo.png"
 };
 
 /**
@@ -31,7 +31,7 @@ export const BIO = {
   role: "Robotics Research Engineer",
   summary: "Specialized in Deep Learning for controls, dexterous manipulation and real-world robot deployment",
   location: "Tokyo, Japan",
-  image: "images/DP.jpg" // Replace with "images/profile.jpg"
+  image: "./images/DP.jpg" // Replace with "./images/profile.jpg"
 };
 
 export const CAREER_TIMELINE: CareerItem[] = [
@@ -109,7 +109,7 @@ export const PROJECTS: ProjectItem[] = [
         { label: "Press Release", url: "https://global.honda/innovation/advanced-technology/avatarrobot.html" }
     ],
     // Landscape Project Thumbnail (e.g., 600x400)
-    image: "images/p3.jpg"
+    image: "./images/p3.jpg"
   },
   {
     id: "sedrica-car",
@@ -126,7 +126,7 @@ export const PROJECTS: ProjectItem[] = [
     ],
     link: "https://youtu.be/8lNKjX0-RKY",
     // Landscape Project Thumbnail
-    image: "images/sedrica.jpeg"
+    image: "./images/sedrica.jpeg"
   }
 ];
 
@@ -139,7 +139,7 @@ export const PUBLICATIONS: PublicationItem[] = [
     year: "2024",
     description: "Solving POMDP in in-hand manipulation using only proprioception & tactile signals",
     // Paper Thumbnail or Chart
-    image: "images/paper-icra24.png",
+    image: "./images/paper-icra24.png",
     link: "https://ieeexplore.ieee.org/abstract/document/10610239"
   },
   {
@@ -149,7 +149,7 @@ export const PUBLICATIONS: PublicationItem[] = [
     venue: "TMLR '23",
     year: "2023",
     description: "Addressing action multimodality in Offline RL for stability",
-    image: "images/paper-tmlr23.png",
+    image: "./images/paper-tmlr23.png",
     link: "https://openreview.net/forum?id=zkRCp4RmAF" // Placeholder or actual link if known
   }
 ];
