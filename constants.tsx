@@ -7,7 +7,7 @@ export const SOCIAL_LINKS = {
   github: "https://github.com/pranav-deo",
   scholar: "https://scholar.google.com/citations?user=gFEbr6cAAAAJ", 
   website: "https://pranav-deo.github.io",
-  resume: "/resume.pdf"
+  resume: "resume.pdf"
 };
 
 /**
