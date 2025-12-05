@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Publications from './components/Publications';
-import Contact from './components/Contact';
-import BackToTop from './components/BackToTop';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import About from './About';
+import Experience from './Experience';
+import Projects from './Projects';
+import Publications from './Publications';
+import Contact from './Contact';
+import BackToTop from './BackToTop';
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('dark');
