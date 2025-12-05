@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MenuIcon, XIcon, DownloadIcon, SunIcon, MoonIcon } from './Icons';
-import { SOCIAL_LINKS } from '../constants';
+import { SOCIAL_LINKS } from '../../constants';
 
 interface NavbarProps {
   isDark: boolean;

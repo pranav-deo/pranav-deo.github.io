@@ -1,5 +1,5 @@
 import React from 'react';
-import { PUBLICATIONS, SOCIAL_LINKS } from '../constants';
+import { PUBLICATIONS, SOCIAL_LINKS } from '../../constants';
 import { ExternalLinkIcon } from './Icons';
 
 const Publications = () => {

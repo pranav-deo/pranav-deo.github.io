@@ -1,5 +1,5 @@
 import React from 'react';
-import { SOCIAL_LINKS } from '../constants';
+import { SOCIAL_LINKS } from '../../constants';
 import { GithubIcon, LinkedinIcon, MailIcon } from './Icons';
 
 const Contact = () => {

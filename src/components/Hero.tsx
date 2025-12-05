@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { GithubIcon, LinkedinIcon, MailIcon, DownloadIcon, ScholarIcon } from './Icons';
-import { BIO, SOCIAL_LINKS } from '../constants';
+import { BIO, SOCIAL_LINKS } from '../../constants';
 
 const Hero = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CAREER_TIMELINE } from '../constants';
+import { CAREER_TIMELINE } from '../../constants';
 import { ExternalLinkIcon, ChevronDownIcon } from './Icons';
 
 const Experience = () => {

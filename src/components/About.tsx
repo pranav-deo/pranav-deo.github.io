@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { LOGOS } from '../constants';
+import { LOGOS } from '../../constants';
 
 const About = () => {
   return (
