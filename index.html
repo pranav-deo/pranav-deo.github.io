@@ -1,420 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranav Deo | Robotics Research Engineer</title>
+    <meta name="description" content="Portfolio of Pranav Deo, Robotics Research Engineer specializing in Deep Reinforcement Learning and Imitation Learning." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        /* Light Mode */
+        --bg-main: 246 246 248;       /* #F6F6F8 */
+        --bg-card: 255 255 255;       /* #FFFFFF */
+        --primary: 90 70 166;         /* #5A46A6 */
+        --secondary: 20 150 135;   /* #149687 */
+        --accent: 200 60 80;       /* #C83C50 */
+        --txt-main: 26 26 26;         /* #1A1A1A */
+        --txt-sec: 76 76 76;          /* #4C4C4C */
+        --border: 221 222 227;        /* #DDDEE3 */
+      }
+      
+      .dark {
+        /* Dark Mode */
+        --bg-main: 16 16 20;          /* #101014 */
+        --bg-card: 26 26 33;          /* #1A1A21 */
+        --primary: 123 108 196;       /* #7B6CC4 */
+        --secondary: 87 193 178;      /* #57C1B2 */
+        --accent: 227 140 130;        /* #E38C82 */
+        --txt-main: 230 230 230;      /* #E6E6E6 */
+        --txt-sec: 164 164 164;       /* #A4A4A4 */
+        --border: 42 42 50;           /* #2A2A32 */
+      }
 
-<head>
-    <title>I'm Pranav Deo</title>
-    <link rel="shortcut icon" type="image/png" href="images/pd.webp" style="width: 100%;">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgb(var(--txt-sec) / 0.3);
+        border-radius: 5px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(var(--txt-sec) / 0.5);
+      }
+    </style>
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              main: 'rgb(var(--bg-main) / <alpha-value>)',
+              card: 'rgb(var(--bg-card) / <alpha-value>)',
+              primary: 'rgb(var(--primary) / <alpha-value>)',
+              secondary: 'rgb(var(--secondary) / <alpha-value>)',
+              accent: 'rgb(var(--accent) / <alpha-value>)',
+              border: 'rgb(var(--border) / <alpha-value>)',
+              txt: {
+                 main: 'rgb(var(--txt-main) / <alpha-value>)',
+                 sec: 'rgb(var(--txt-sec) / <alpha-value>)'
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#home-section"><span>P</span>ranav Deo</a>
-            <!-- <img src="images/iitb_logo.png" alt="IITB logo" style="width:100px;height:100px;"> -->
-            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
-
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-                    <!-- <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li> -->
-                    <!-- <li class="nav-item"><a href="#page-2" class="nav-link"><span>Education</span></a></li>
-                    <li class="nav-item"><a href="#Extra-Curricular-section"
-                            class="nav-link"><span>Projects</span></a></li> -->
-                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                    <!-- <li class="nav-item white_txt"><span>_________ </span></a></li> -->
-                    <!-- <li><a href="resume.pdf" class="btn_top btn-primary py-3 px-3 align-items-end">Download CV</a></p></li> -->
-                    <li class="nav-item"><a href="resume.pdf" target="_blank"
-                            class="nav-link font-weight-bold"><span>Download
-                                CV</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="hero-wrap js-fullheight" id="home-section">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-                <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-                    <div class="text text-center">
-                        <span class="h2">Hey, I am</span>
-                        <h1>Pranav Deo</h1>
-                        <!-- <h2>I'm a 
-                        <span
-                            class="txt-rotate"
-                            data-period="500"
-                            data-rotate='[ "Roboticist.", "Developer.", "Coder.", "Innovator." ]'>
-                        </span>
-                    </h2> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="mouse">
-            <a href="#" class="mouse-icon-white">
-                <!-- <a href="#" class="mouse-icon"> -->
-                <div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-            </a>
-        </div>
-    </section>
-
-    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb goto-here" id="about-section">
-        <div class="container">
-            <div class="row d-flex no-gutters ">
-                <div class="col-md-6 col-lg-6 d-flex">
-                    <div class="img-about img d-flex align-items-stretch">
-                        <div class="overlay"></div>
-                        <!-- <div class="img d-flex align-self-stretch align-items-center"
-                            style="background-image:url(images/about.jpg);">
-                        </div> -->
-                        <img src="images/about.jpg" style="object-fit: cover; width: 100%; height: auto;">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 pl-md-5 pt-5">
-                    <div class="row justify-content-start pb-3">
-                        <div class="col-md-12 heading-section ftco-animate">
-                            <!-- <h1 class="big">About</h1> -->
-                            <h2 class="mb-4">About Me</h2>
-                            <!-- <p> I'm currently a Robot Learning Research Engineer at <a
-                                    href="https://www.honda.co.jp/robotics/ " target="_blank"> Honda robotics,
-                                    Japan</a>.
-                                Here, I do R&D on general robotics problems with focus on Deep Reinforcement Learning
-                                for
-                                Dextrous Manipulation and it's deployment on in-house state-of-the-art robot hardware.
-                            </p>
-                            <p> I love cool technology and making new things work. My research interests primarily lie
-                                in Robot Learning and
-                                Computer Vision. Moreover, I'm really excited about their application on real-world
-                                robots, unmanned vehiches
-                                and autonomous driving. </p> -->
-
-                            <p> As a Robotics Research Engineer at <a
-                                href="https://www.honda.co.jp/robotics/ " target="_blank"> Honda Robotics Japan</a>, 
-                                I specialize in Deep Reinforcement Learning for Dextrous Manipulation. 
-                                My focus is on R&D for general robotics, with a keen interest in the 
-                                practical applications of Robot Learning and Computer Vision. 
-                                I'm really excited about deploying these innovations on real-world robots, 
-                                unmanned vehicles, and in autonomous driving. Welcome to my journey 
-                                at the forefront of cutting-edge technology.</p>
-                        </div>
-                    </div>
-                    <div class="ftco-animate">
-                        <p><a href="resume.pdf" target="_blank" class="btn btn-primary py-3 px-3">Download CV</a>
-                    </div>
-
-                    <div class="row justify-content-shift">
-                        <div class="ftco-animate">
-                            <a href="https://www.honda.co.jp/robotics/" target="_blank" class="partner helper"> <span
-                                    class="helper"></span><img src="images/honda-logo.webp" id="honda-logo"
-                                    alt="Honda R&D Logo"></a>
-                        </div>
-                        <div class="ftco-animate">
-                            <a href="https://www.iitb.ac.in/" target="_blank" class="partner helper"> <span
-                                    class="helper"></span><img src="images/iitb_logo.png" id="iitb-logo"
-                                    alt="IIT Bombay Logo"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="ftco-section ftco-no-pb pt-5" id="resume-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3" id="only-big-screen">
-                    <nav id="navi">
-                        <ul>
-                            <li><a href="#page-0">Experience</a></li>
-                            <li><a href="#page-1">Education</a></li>
-                            <li><a href="#page-2">Key Projects</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-
-                <div class="col-md-9">
-                    <div id="page-0" class="page">
-                        <h2 class="heading">Experience</h2>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <!-- <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div> -->
-                            <div class="text pl-3">
-                                <span class="date">Oct '21 - Present</span>
-                                <h2> Robotics Research Engineer </h2>
-                                <span class="position">Honda R&D, Japan</span>
-                                <p> Developing Deep Reinforcement Learning based solutions for fine control
-                                    of in-house state-of-the-art robots
-                                </p>
-                            </div>
-                        </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <!--<div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div>-->
-                            <div class="text pl-3">
-                                <span class="date">March '20 - May '21</span>
-                                <h2>Overall Coordinator</h2>
-                                <span class="position">Team SeDriCa, Innovation Cell, IIT Bombay</span>
-                                <p> Managed a multi-project team of 60+ students focused on building self-driving
-                                    car and autonomous drones
-                                </p>
-                            </div>
-                        </div>
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <!-- <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div> -->
-                            <div class="text pl-3">
-                                <span class="date">June '20</span>
-                                <h2>Computer Vision Intern</h2>
-                                <span class="position">Daikin, Japan</span>
-                                <p> Researched and Deployed Real-time object detection algorithms suitable for edge
-                                    devices </p>
-                            </div>
-                        </div>
-
-                        <!-- <div class="resume-wrap d-flex ftco-animate">
-                            <div class="text pl-3">
-                                <span class="date">Dec '18</span>
-                                <h2>Software Developer</h2>
-                                <span class="position">Tactopus</span>
-                                <p> Developed vision detection module for tactile sensitive tokens in a board game </p>
-                            </div>
-                        </div> -->
-                        <div class="resume-wrap d-flex ftco-animate">
-                            <!-- <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div> -->
-                            <div class="text pl-3">
-                                <span class="date"> Summer '19, Spring '20</span>
-                                <h2>Teaching Assistant</h2>
-                                <span class="position">IIT Bombay</span>
-                                <p> Created and evaluated assignments for students;
-                                    conducted extra study sessions
-                                </p>
-                            </div>
-                        </div>
-
-
-
-                        <div id="page-1" class="page">
-                            <h2 class="heading">Education</h2>
-                            <div class="resume-wrap d-flex ftco-animate">
-                                <!-- <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="flaticon-ideas"></span>
-                            </div> -->
-                                <div class="text pl-3">
-                                    <span class="date">2017 - 2021</span>
-                                    <h2>Bachelor of Technology in Civil Engineering</h2>
-                                    <span class="position">Indian Institute of technology Bombay</span>
-                                    <p>Department Rank 5 out of 102 batchmates with GPA 9.26/10.00 <br></p>
-                                    <ul>
-                                        <li>Minor degree in <a class="bold_blk_txt">Computer Science
-                                                Engineering</a></li>
-                                        <li>Minor degree in <a class="bold_blk_txt">Artificial Intelligence &
-                                                Data Science</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="page-2" class="page">
-                            <h2 class="heading"> Key Projects </h2>
-                            <div class="resume-wrap d-flex ftco-animate">
-                                <div class="text pl-3">
-                                    <span class="date">Oct '21 - Present</span>
-                                    <h2>Dextrous in-hand manipulation</h2>
-                                    <img src="images/p3.jpg" width="90%">
-                                    <span class="position">Frontier Robotics, Honda R&D, Japan</span>
-                                    <img src="">
-                                    <p>Using Deep Reinforcement Learning to train policy robust to changes in
-                                        environment</p>
-                                    <p><a href="https://youtu.be/c-q-sr4ASFw" target="_blank"> coin picking</a>,
-                                        <a href="https://youtu.be/AktHZjiEA5A" target="_blank"> can opening</a>,
-                                        <a href="https://global.honda/innovation/advanced-technology/avatarrobot.html"
-                                            target="_blank"> press release </a>
-                                    </p>
-                                </div>
-
-                                <div class="text pl-3">
-                                    <span class="date">Jan '18 - May '21</span>
-                                    <h2> SeDriCa (Self-Driving car) </h2>
-                                    <img src="images/work-1.jpeg" width="90%">
-                                    <span class="position">UMIC, IIT Bombay</span>
-                                    <p>Part of a team of 30 students working on developing India's 1<sup>st</sup>
-                                        self-driving car</p>
-                                    <p><a href="https://youtu.be/8lNKjX0-RKY" target="_blank"> showcase video</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section class="ftco-section contact-section" id="contact-section">
-        <div class="row justify-content-center pb-3">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <h1 class="big big-2">Contact</h1>
-                <h2 class="mb-4">Contact Me</h2>
-                <p> Feel free to get in touch! </p>
-            </div>
-        </div>
-
-        <div class="col-lg-9" style="margin: auto; padding-bottom: 2rem;">
-            <div class="row justify-content-around d-flex contact-info ftco-animate">
-                <div class="d-flex ftco-animate">
-                    <a href="https://github.com/pranav-deo" target="_blank">   
-                        <div class="box text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-github-alt"> </span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">GitHub</h3>
-                            </div>
-                        </div>
-                    </a> 
-                </div>
-                <div class="d-flex ftco-animate" >
-                    <a href="mailto:pranavdeo99@gmail.com" target="_blank">   
-                        <div class="box text-center ">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-envelope"></span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">Email</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="d-flex ftco-animate" >
-                    <a href="https://www.linkedin.com/in/pranavdeo99" target="_blank">   
-                        <div class="box text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="icon-linkedin"></span>
-                            </div>
-                            <div>
-                                <h3 class="mb-4">LinkedIn</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <footer class="ftco-footer ftco-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4" id="only-big-screen">
-                            <h2 class="ftco-heading-2">About</h2>
-                            <p> I love cool technology and making new things work. My research interests primarily
-                                lie in Robot Learning and Computer Vision.</p>
-                                <!-- <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4 ml-md-4">
-                            <h2 class="ftco-heading-2">Links</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a>
-                                </li>
-                                <li><a href="#about-section"><span
-                                            class="icon-long-arrow-right mr-2"></span>About</a></li>
-                                <li><a href="#resume-section"><span
-                                            class="icon-long-arrow-right mr-2"></span>Resume</a></li>
-                                <!-- <li><a href="#Extra-Curricular-section"><span
-                                            class="icon-long-arrow-right mr-2"></span>Extra-Curricular</a></li> -->
-                                <li><a href="#contact-section"><span
-                                            class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-md">
-                        <div class="ftco-footer-widget mb-4">
-                            <h2 class="ftco-heading-2">Contact Info</h2>
-                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-2" id="small-screen-start">
-                                <li class="ftco-animate"><a href="https://github.com/pranav-deo"><span class="icon-github"></span></a></li>
-                                <li class="ftco-animate"><a href="mailto:pranavdeo99@gmail.com"><span class="icon-envelope"></span></a></li>
-                                <li class="ftco-animate"><a href="https://www.linkedin.com/in/pranavdeo99"><span class="icon-linkedin"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-
-                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | Based on a template by <a href="https://colorlib.com"
-                                target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </section>
-
-
-        <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                    stroke="#F96D00" />
-            </svg></div>
-
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.animateNumber.min.js"></script>
-        <script src="js/scrollax.min.js"></script>
-
-        <script src="js/main.js"></script>
-
+  <body class="bg-main text-txt-main antialiased selection:bg-primary selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
 </body>
-
 </html>
